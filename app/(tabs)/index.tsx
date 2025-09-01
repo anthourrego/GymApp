@@ -1,10 +1,11 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Button, PaperProvider } from 'react-native-paper';
 
 export default function HomeScreen() {
   return (
@@ -16,6 +17,21 @@ export default function HomeScreen() {
           style={styles.reactLogo}
         />
       }>
+
+      <PaperProvider>
+        <Button >Holaaaa</Button>
+
+        <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+          Press me
+        </Button>
+      </PaperProvider>
+
+      <View className="flex-1 items-center justify-center bg-white">
+        <Text className="text-xl font-bold text-blue-500">
+          Welcome to Nativewind!
+        </Text>
+      </View>
+
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />

@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "ms-vscode.vscode-css-peek",
+    "ms-vscode.vscode-html-css-support",
+    "ms-vscode.vscode-js-debug-companion",
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-typescript-next",
+    "SonarSource.sonarlint-vscode"
+  ]
+}
